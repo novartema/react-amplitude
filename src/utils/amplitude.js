@@ -3,6 +3,7 @@ export default function (e, t) {
     var r = t.createElement("script");
     r.type = "text/javascript";
     r.async = true;
+    r.defer = true;
     r.src = "https://cdn.amplitude.com/libs/amplitude-4.5.2-min.gz.js";
     r.onload = function () {
         e.amplitude.runQueuedFunctions()
